@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Lezione HTML</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Registrati al blog!</h1>
+    </header>
+  </body>
+  <div>
+    <p>Conpila i seguenti campi</p>
+    <form action="http://127.0.0.1:5500/start.html">
+      <label for="Email">Email</label>
+      <input type="email" name="email" id="Email" />
+
+      <label for="Password">Password</label>
+      <input type="password" name="password" id="Password" />
+
+      <label for="fname">Nome</label>
+      <input type="name" name="name" id="fname" />
+
+      <label for="lname">Cognome</label>
+      <input type="name" name="name" id="lname" />
+
+      <label for="Cellulare">Cellulare</label>
+      <input type="tel" name="number" id="Cellulare" />
+
+      <label for="Abbonamento">Scegli uno dei nostri piani</label>
+      <select name="Abbonamento" id="Abbonamento">
+        <option value="Gratis">Piano Gratis</option>
+        <optgroup>
+          <legend>Piani a pagamento</legend>
+          <option value="5 dollari">Piano 5$ mensili</option>
+          <option value="10 dollari">Piano 10$ mensili</option>
+          <option value="15 dollari">Piano 15$ mensili</option>
+        </optgroup>
+      </select>
+      <label for="Pro"> Vantaggi pro</label>
+      <input type="checkbox" name="Pro" id="Pro" />
+      <section>
+        <h3>Checkout</h3>
+        <label for="ccnum">Numero Carta di Credito</label>
+        <input
+          type="text"
+          id="ccnum"
+          name="cardnumber"
+          placeholder="1111-2222-3333-4444"
+        />
+        <label for="cvc">Cvc</label>
+        <input type="text" id="cvc" name="cvc" placeholder="123" />
+
+        <label for="expmonth">Scadenza</label>
+        <input type="text" id="expmonth" name="expmonth" placeholder="11/22" />
+      </section>
+      <div>
+        <label for="adr">Indirizzo di fatturazione</label>
+        <input
+          type="text"
+          id="adr"
+          name="address"
+          placeholder="Via Pietro Nenni, 15, Pa"
+        />
+      </div>
+    </form>
+  </div>
+</html>
